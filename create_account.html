@@ -1,0 +1,76 @@
+
+
+ 
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+        
+        body {
+            background-color: skyblue;
+        }
+        h2 {
+            font-family: 'Slabo 27px';
+            border-bottom: 1px solid black;
+            font-weight: 900;
+        }
+        form ul {
+            list-style: none;
+        }
+    </style>
+
+            
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+ 
+
+        
+       
+    <h2 class="container text-center">Crear Nueva Cuenta</h2>
+    <h6 class="text-center"><em>(Favor de llenar todos los campos)</em></h6>
+    <br>
+    
+    <form class="container" action="/accounts/register/" method="post">
+        
+        <section class="form-control">
+            <h4>Ingrese informacion basica</h4>
+           
+        </section>
+        <br>
+        
+        
+        
+        <br>
+        
+        <section>
+            <input type="checkbox" required> 
+            <small>No soy un robot</small>
+        </section>
+        
+        <br>
+        
+        <input type="submit" class="form-control btn btn-danger" value="Crear cuenta" name="submit"
+        />
+        
+    </form>
+
+    <br>
+ 
+    <script>
+        $(".active").removeClass("active");
+        $("#nav-create").addClass("active");
+
+        $(".helptext").html("");
+
+        var input_text = $("input[type=text]");
+        input_text.addClass("form-control");
+
+        var input_pass = $("input[type=password]");
+        input_pass.addClass("form-control");
+
+        $("form ul li").addClass("btn btn-danger");
+
+        // var labels = $("label");
+
+        // labels.addClass("col");
+        // input_text.addClass("col")
+        // input_pass.addClass("col");
+    </script>
+ 

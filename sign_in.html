@@ -1,0 +1,46 @@
+ 
+    <style>
+        body {
+            background-color: aliceblue
+        }
+        
+        .foot {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+    </style>
+ 
+ 
+        
+    <div class="container bg-info"> 
+        <form class="form-control" action="/accounts/login/" method="post">
+          
+            <h2>Ingresar informacion de la cuenta</h2>
+
+            {{ form }}
+
+            <br>
+
+            <button type="submit" class="btn btn-success">
+                <i class="fa fa-sign-in"></i>
+                Login
+            </button>
+
+            <br> <br>
+
+            <small class="row">
+                <a href="sign_in.html" class="col text-right">Create New Account</a>
+            </small>
+        </form>
+    </div>
+
+  
+ 
+    <script>
+        $(".active").removeClass("active");
+        $("#nav-login").addClass("active");
+        $("input").addClass("form-control");
+    </script>
+ 

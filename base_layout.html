@@ -1,0 +1,92 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>Software Banco</title>
+        
+        <!-- CSS FRAMEWORKS REQUIRED -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+         
+        
+        <link rel="stylesheet" href="/static/common-styles.css">
+
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+            <a class="navbar-brand" href="base_layout.html">&nbsp;Banco  de Metrociudad</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="base_layout.html" id="nav-home">Pagina Principal</a>
+                    <a class="nav-item nav-link" href="create_account.html" id="nav-create">Crear nueva cuenta</a>
+                    <a class="nav-item nav-link" href="sign_in.html" id="nav-login">Log in</a>
+                </div>
+            </div>
+        </nav>
+        
+        <br> <br> <br>
+
+       
+        
+        <!-- FOOTER -->
+        <section class="foot bg-success text-white">
+            <div class="text-center">
+                &copy; Página creada por <a>Kramsky/Salceda</a>  <i class="fa fa-heart" style="color: red;"></i>
+                <br>
+                <i></i><a>&copy; Banco Registrado y Autorizado por el estado de Metrociudad</a>
+            </div>
+        </section>    
+        
+        <!-- JS LIBRARIES REQUIRED -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+      
+        
+    </body>   <style>
+        h1 {
+            border-bottom: 1px solid;
+        }
+        h4 {
+            font-weight: 400;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        
+        .foot {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+        }
+    </style>
+   
+    <div class="container text-center">
+        <h1>Bienvenido al Banco Metroman</h1>
+        <h4><em>El banco más seguro de todo Metrociudad</em></h4>
+        <img src="https://2.bp.blogspot.com/-yxOmnVXJdpU/XGHd9MZsTxI/AAAAAAAAIFw/rHM1kE5SjCQlKZTx3JHpjcVNyCafmhHRACLcBGAs/s1600/5267169-1444057083-Megam.jpg" width="200px">
+    </div>
+    
+    <br>
+    
+    <div class="container">
+        <a href="create_account.html"><button class="btn btn-primary btn-block" id="acc"><i class="fa fa-user"></i> Registrarse </button></a>
+        <br> 
+        <a href="sign_in.html"><button class="btn btn-danger btn-block" id="sign_in"><i class="fa fa-sign-in"></i> Ingresar </button></a>
+    </div>
+    
+    <br>
+
+
+</html>
